@@ -132,7 +132,7 @@ router.post("/upload", upload.single("photo"), (req, res) => {
           console.error(error);
           res.sendStatus(500);
         }
-        res.redirect("/success.html");
+        res.redirect("/welcome.html");
       }
     );
   } else throw "error";
