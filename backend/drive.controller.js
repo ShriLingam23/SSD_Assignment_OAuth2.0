@@ -18,6 +18,7 @@ var access_token = "";
 
 var oauthUrl = getOAuthURL();
 
+// Function to get the OAuth URL for Google OAuth 2.0 Authorization
 function getOAuthURL() {
   // authorization uri
   var authUrl = "https://accounts.google.com/o/oauth2/v2/auth?";
@@ -52,6 +53,7 @@ function getOAuthURL() {
   return oauthUrl;
 }
 
+// API endpoint to authorize the user via Google OAuth2.0
 router.get(
   "/auth",
   (req, res) => {
@@ -63,6 +65,7 @@ router.get(
   }
 );
 
+// API endpoint to upload the image
 router.use("/oauthcallback", (req, res) => {
   var session = req.session;
   var code = req.query.code;
@@ -99,6 +102,7 @@ router.use("/oauthcallback", (req, res) => {
   );
 });
 
+// API endpoint to upload the picture into the google drive by formatting it via multer
 const upload = multer({ dest: __dirname + "/uploads/images" });
 router.post("/upload", upload.single("photo"), (req, res) => {
   if (req.file) {
@@ -138,6 +142,7 @@ router.post("/upload", upload.single("photo"), (req, res) => {
   } else throw "error";
 });
 
+// API endpoint to get the google user profile information
 router.get("/user", (req, res) => {
   if (access_token) {
     request(

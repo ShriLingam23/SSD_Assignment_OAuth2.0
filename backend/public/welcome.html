@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <script>
+    // Function to get the user details from created API endpoint
     function getUserInfo() {
-      //   alert("hihi");
       fetch("http://localhost:3000/api/user")
         // Parse the response as JSON
         .then((res) => res.json())
@@ -26,6 +26,7 @@
     <script src="./scripts/upload.js"></script>
     <link rel="stylesheet" href="./css/upload.css" />
 
+    <!-- Tailwind CSS CDN stylesheet -->
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -133,6 +134,7 @@
         </div>
       </nav>
 
+      <!-- Main Header bar uner navigation panel -->
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <h1
@@ -157,6 +159,7 @@
       </header>
 
       <!-- ALERT: START -->
+      <!-- Image upload failure alert -->
       <div class="alert-remove">
         <div
           class="bg-red-100 border-t-4 border-red-500 rounded-b text-red-900 px-4 py-3 shadow-md"
@@ -181,6 +184,7 @@
           </div>
         </div>
       </div>
+      <!-- Image Upload successfull alert -->
       <div class="alert-success">
         <div
           class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
@@ -225,6 +229,7 @@
                   class="file-upload-card flex bg-gray-200 rounded overflow-hidden shadow-lg rounded-lg"
                 >
                   <!-- DISABLE:AFTER SHOWING IMAGE  -->
+                  <!-- draf and drop image panel -->
                   <div class="image-upload-wrap">
                     <input
                       class="file-upload-input"
@@ -238,6 +243,7 @@
                     </div>
                   </div>
                   <!-- SHOW:AFTER SHOWING IMAGE -->
+                  <!-- to show the image from the computer -->
                   <img
                     class="w-full file-upload-image"
                     src="#"
@@ -248,6 +254,7 @@
                     class="file-upload flex flex-col justify-around items-center pt-8"
                   >
                     <!-- SHOW:AFTER SHOWING IMAGE -->
+                    <!-- Button to Add image from the computer -->
                     <button
                       class="flex bg-green-500 w-48 items-center hover:bg-white text-white hover:text-green-500 font-bold py-2 px-4 border border-green-500 hover:border-green rounded"
                       type="button"
@@ -273,6 +280,7 @@
                       Add Picture
                     </button>
 
+                    <!-- Button to upload the picture into the Google Drive using Google OAuth2.0 -->
                     <button
                       type="submit"
                       class="bg-blue-500 w-48 flex items-center hover:bg-white text-white hover:text-blue-500 font-bold mt-32 py-2 px-4 border border-blue-500 hover:border-blue rounded"
@@ -298,6 +306,7 @@
                       Upload
                     </button>
 
+                    <!-- Button to remove the uploaded picture -->
                     <button
                       type="button"
                       onclick="removeUpload()"
@@ -307,7 +316,7 @@
                         width="2em"
                         height="2em"
                         viewBox="0 0 16 16"
-                        class="bi bi-x mr-4"
+                        class="bi bi-x mr-3"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
                       >
