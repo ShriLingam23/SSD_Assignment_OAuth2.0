@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+    function myFun() {
+        // Call the user info API using the fetch browser library
+        fetch('http://localhost:3000/api/auth')
+            // Parse the response as JSON
+            .then(res => res.json())
+            .then(res => {
+                document.getElementById("linkToAuth").href = res.url
+                alert(res.url)
+            })
+    }
+</script>
+
+<body onload="myFun();">
+    <a id="linkToAuth" href="">
+        Login with github
+    </a>
+</body>
+
+</html>
