@@ -16,17 +16,18 @@ const CLIENTID = process.env.CLIENT_ID,
 
 var access_token = "";
 
+// Assign google OAuth uri to variable
 var oauthUrl = getOAuthURL();
 
 // Function to get the OAuth URL for Google OAuth 2.0 Authorization
 function getOAuthURL() {
+
   // authorization uri
   var authUrl = "https://accounts.google.com/o/oauth2/v2/auth?";
 
-  //#region get parameters
-
   // access_type
   var access_type = "access_type=offline&";
+
   // scopes
   var scope =
     "scope=" +
@@ -38,22 +39,20 @@ function getOAuthURL() {
         "https://www.googleapis.com/auth/plus.me"
     ) +
     "&";
-  // response type
+
   var response_type = "response_type=code&";
-  // client id
   var client_id = "client_id=" + CLIENTID + "&";
-  // redirect uri
   var redirect_uri = "redirect_uri=" + encodeURIComponent(REDIRECTURI);
 
   //#endregion
 
-  // prepare url and return
+  // Concatenate parameters into one value
   var oauthUrl =
     authUrl + access_type + scope + response_type + client_id + redirect_uri;
   return oauthUrl;
 }
 
-// API endpoint to authorize the user via Google OAuth2.0
+// Endpoint to return Google OAuth uri along with client ID
 router.get(
   "/auth",
   (req, res) => {
@@ -70,7 +69,7 @@ router.use("/oauthcallback", (req, res) => {
   var session = req.session;
   var code = req.query.code;
 
-  //Request to get access token by exchanging Authorization code
+  //Request to get access token by exchanging Authorization code, ClientId and Client Secret
   var url = "https://www.googleapis.com/oauth2/v4/token";
   request(
     {
