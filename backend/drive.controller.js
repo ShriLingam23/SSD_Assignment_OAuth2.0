@@ -70,7 +70,7 @@ router.use("/oauthcallback", (req, res) => {
   var session = req.session;
   var code = req.query.code;
 
-  //Request to exchange Authorization code for token
+  //Request to get access token by exchanging Authorization code
   var url = "https://www.googleapis.com/oauth2/v4/token";
   request(
     {
