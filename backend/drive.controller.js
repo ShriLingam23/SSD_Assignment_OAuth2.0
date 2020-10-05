@@ -65,11 +65,12 @@ router.get(
   }
 );
 
-// API endpoint to upload the image
+// API endpoint for redirecting after
 router.use("/oauthcallback", (req, res) => {
   var session = req.session;
   var code = req.query.code;
 
+  //Request to exchange Authorization code for token
   var url = "https://www.googleapis.com/oauth2/v4/token";
   request(
     {
@@ -91,7 +92,8 @@ router.use("/oauthcallback", (req, res) => {
         return console.error(err);
       }
 
-      // set the access_token
+      // Google Authorization server validate authorization code and return Token response
+      // Such as Access Token, Refresh Token, Expiry and Id Token
       var json = JSON.parse(body);
       access_token = json.access_token;
       session["tokens"] = body;
