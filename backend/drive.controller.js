@@ -104,10 +104,14 @@ router.use("/oauthcallback", (req, res) => {
   );
 });
 
-// API endpoint to upload the picture into the google drive by formatting it via multer
+
 const upload = multer({ dest: __dirname + "/uploads/images" });
+
+// API endpoint to upload the picture into the google drive by formatting it via multer
 router.post("/upload", upload.single("photo"), (req, res) => {
   if (req.file) {
+
+    //With use of Access Token access Google Drive server to upload image
     var url = "https://www.googleapis.com/upload/drive/v3/files";
     request(
       {
