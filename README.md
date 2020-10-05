@@ -1,6 +1,6 @@
 ﻿# SSD_Assignment_OAuth2.0
 
-You can checkout the sample implementation and use of Google OAuth 2.0 in express deployed to [Heroku](https://ssd-oauth-assignment.herokuapp.com)
+You can checkout the sample implementation and use of Google OAuth 2.0 in demo application deployed to [Heroku](https://ssd-oauth-assignment.herokuapp.com)
 
 ## Getting Started
 
