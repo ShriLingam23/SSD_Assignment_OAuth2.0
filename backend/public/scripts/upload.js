@@ -45,7 +45,7 @@ function toggleUserPanel() {
   $(".user-panel").toggle();
 }
 
-// function to shoe the alert message and control actions after image upload.
+// function to show the alert message and control actions after image upload.
 function upload() {
   $(".alert-success").show();
   $(".alert-success").delay(8000).fadeOut();

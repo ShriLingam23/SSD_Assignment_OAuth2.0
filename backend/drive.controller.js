@@ -65,7 +65,7 @@ router.get(
   }
 );
 
-// API endpoint for redirecting after
+// API endpoint for redirecting after google OAuth Server authenticate
 router.use("/oauthcallback", (req, res) => {
   var session = req.session;
   var code = req.query.code;
