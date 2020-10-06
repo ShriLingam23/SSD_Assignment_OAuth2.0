@@ -18,7 +18,7 @@ navigate to [Google Developer Console](https://console.developers.google.com/) t
 
 ### .env setup
 
-create a .env file in root containing the following information
+modify .env file in root containing the following information (Already done!)
 
 ```
 CLIENT_ID = "Your application client Id"
