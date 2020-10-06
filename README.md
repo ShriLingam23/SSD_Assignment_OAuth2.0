@@ -15,10 +15,15 @@
 
 #### Technology Stack
 
-* **NodeJs**: server-side implementation
+* **Node JS**: For server-side implementation
+* **Express JS**: For server-side implementation
+* **Request**: To make HTTP calls
+* **Multer**: To handle multipart form data especially for file upload
+* **Tailwind CSS**: To develop custom design UI
+
 * **Visual Studio**: Integrated Development Environment (IDE)
-* **Google Drive API**: the resource server API
-* **OAuth 2.0**: the authorization framework
+* **Google Drive API**: The resource server API
+* **OAuth 2.0**: The authorization framework
 
 ## Getting Started
 
@@ -45,9 +50,9 @@
 ```
 CLIENT_ID = "Your application client Id"
 CLIENT_SECRET = "Your client secret"
-REDIRECT_URL = "http://localhost:3000/api/oauthcallback"
+REDIRECT_URL = "http://localhost:[PORT]/api/oauthcallback"
 ```
 
 ### Run
 
-* Run the application using the following command `nodemon server.js` or `node server.js`
+* Run the application using the following command `node server.js` or `nodemon server.js`
