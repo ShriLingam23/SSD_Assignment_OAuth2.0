@@ -22,15 +22,15 @@ You can checkout the implementation and use of Google OAuth 2.0 in demo applicat
 
 ### Install
 
-clone or download the sample application and run `npm install` to install all related dependencies.
+* Clone or download the sample application and run `npm install` to install all related dependencies.
 
 ### Google Application (Already done, can skip! - Unless you want own configuration) 
 
-navigate to [Google Developer Console](https://console.developers.google.com/) to create an application for the demo. Use the client id and secret of created application in the below section to run the demo.
+* Navigate to [Google Developer Console](https://console.developers.google.com/) to create an application for the demo. Use the client id and secret of created application in the below section to run the demo.
 
 ### Configure .env setup (Already done, can skip! - Unless you want own configuration) 
 
-modify .env file in root containing the following information
+* Modify .env file in root containing the following information
 
 ```
 CLIENT_ID = "Your application client Id"
@@ -40,6 +40,4 @@ REDIRECT_URL = "http://localhost:3000/api/oauthcallback"
 
 ### Run
 
-run the application using the following command
-
-`nodemon server` or `node server`
+* Run the application using the following command `nodemon server` or `node server`
