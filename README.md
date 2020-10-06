@@ -20,17 +20,17 @@ You can checkout the implementation and use of Google OAuth 2.0 in demo applicat
 * NodeJs version 12.18.0: [Node 12.18.0 download](https://nodejs.org/en/)
 * Visual Studio Code(Recommended) [download here](https://code.visualstudio.com/)
 
-### install
+### Install
 
 clone or download the sample application and run `npm install` to install all related dependencies.
 
-### Google Application
+### Google Application (Already done, can skip! - Unless you want own configuration) 
 
 navigate to [Google Developer Console](https://console.developers.google.com/) to create an application for the demo. Use the client id and secret of created application in the below section to run the demo.
 
-### .env setup
+### Configure .env setup (Already done, can skip! - Unless you want own configuration) 
 
-modify .env file in root containing the following information (Already done!)
+modify .env file in root containing the following information
 
 ```
 CLIENT_ID = "Your application client Id"
@@ -38,7 +38,7 @@ CLIENT_SECRET = "Your client secret"
 REDIRECT_URL = "http://localhost:3000/api/oauthcallback"
 ```
 
-### run
+### Run
 
 run the application using the following command
 
