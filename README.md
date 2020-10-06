@@ -2,8 +2,8 @@
  
  ## Introduction
 
-This application was developed to upload the photo of a particular user to their google drive. For user authorization, Google OAuth2.0 authorization framework has been used. 
-You can checkout the implementation and use of Google OAuth 2.0 in demo application deployed to [Heroku](https://ssd-oauth-assignment.herokuapp.com)
+* This application was developed to upload the photo of a particular user to their google drive. For user authorization, Google OAuth2.0 authorization framework has been used. 
+* You can checkout the implementation and use of Google OAuth 2.0 in demo application deployed to [Heroku](https://ssd-oauth-assignment.herokuapp.com)
 
 #### Technology Stack
 
