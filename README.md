@@ -17,12 +17,14 @@ You can checkout the implementation and use of Google OAuth 2.0 in demo applicat
 ### Prerequisites
 
 * Git command line tool [download here](https://git-scm.com/download/win)
-* NodeJs version 12.18.0: [Node 12.18.0 download](https://nodejs.org/en/)
+* NodeJs version 12.18.0: [download here](https://nodejs.org/en/)
 * Visual Studio Code(Recommended) [download here](https://code.visualstudio.com/)
 
 ### Install
 
-* Clone or download the sample application and run `npm install` to install all related dependencies.
+* Clone or download the sample application 
+* Navigate into backend folder, `cd backend`
+* Run `npm install` to install all related dependencies.
 
 ### Google Application (Already done, can skip! - Unless you want own configuration) 
 
@@ -40,4 +42,4 @@ REDIRECT_URL = "http://localhost:3000/api/oauthcallback"
 
 ### Run
 
-* Run the application using the following command `nodemon server` or `node server`
+* Run the application using the following command `nodemon server.js` or `node server.js`
