@@ -4,14 +4,14 @@
 
 * This application was developed to upload the photo of a particular user to their google drive. For user authorization, Google OAuth2.0 authorization framework has been used. 
 * You can checkout the implementation and use of Google OAuth 2.0 in demo application deployed to [Heroku](https://ssd-oauth-assignment.herokuapp.com)
-<table>
-	<tr>
-		<td span="5"></td>
-		<td><img src="https://github.com/ShriLingam23/SSD_Assignment_OAuth2.0/blob/master/demo/LandingPage.jpg" height="200"></td>
-		<td span="3"></td>
-		<td><img src="https://github.com/ShriLingam23/SSD_Assignment_OAuth2.0/blob/master/demo/UploadPage.jpg" height="200"></td>
- </tr>
-</table>
+<div style="text-align:center;">
+	<table>
+		<tr>
+			<td><img src="https://github.com/ShriLingam23/SSD_Assignment_OAuth2.0/blob/master/demo/LandingPage.jpg" height="200"></td>
+			<td><img src="https://github.com/ShriLingam23/SSD_Assignment_OAuth2.0/blob/master/demo/UploadPage.jpg" height="200"></td>
+		</tr>
+	</table>
+</div>
 
 #### Technology Stack
 
